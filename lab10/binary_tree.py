@@ -1,3 +1,4 @@
+from __future__ import annotations
 from typing import List
 
 
@@ -129,7 +130,7 @@ class BinaryTree:
         self.__recursive_delete_node(self.root)
         self.root = None
 
-    def delete_all_by_group(self, group):
+    def delete_all_by_group(self, group) -> BinaryTree:
         tree_list = self.get_tree_in_list()
         new_tree = BinaryTree()
         for key in tree_list:
